@@ -9,7 +9,10 @@
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve"
+    "ionic:serve": "ionic-app-scripts serve",
+    "add:ios": "ionic-app-scripts cordova platform add ios --no-resources",
+    "add:android": "ionic-app-scripts cordova platform add android --no-resources",
+    "build:uat": "NODE_ENV=uat"
   },
   "dependencies": {
     "@angular/common": "5.0.3",
@@ -24,15 +27,49 @@
     "@ionic-native/splash-screen": "4.4.0",
     "@ionic-native/status-bar": "4.4.0",
     "@ionic/storage": "2.1.3",
+    "code-push": "^2.0.4",
+    "cordova-android": "^7.1.0",
+    "cordova-ios": "4.5.4",
+    "cordova-plugin-code-push": "^1.11.7",
+    "cordova-plugin-compat": "^1.2.0",
+    "cordova-plugin-device": "^2.0.1",
+    "cordova-plugin-dialogs": "^2.0.1",
+    "cordova-plugin-file": "git+https://github.com/apache/cordova-plugin-file.git#4.3.3",
+    "cordova-plugin-file-transfer": "git+https://github.com/apache/cordova-plugin-file-transfer.git#1.6.3",
+    "cordova-plugin-ionic-keyboard": "^2.0.5",
+    "cordova-plugin-ionic-webview": "^1.1.16",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-whitelist": "^1.3.3",
+    "cordova-plugin-zip": "^3.1.0",
     "ionic-angular": "3.9.2",
+    "ionic2-super-tabs": "^4.2.2",
     "ionicons": "3.0.0",
+    "ng2-slim-loading-bar": "^4.0.0",
     "rxjs": "5.5.2",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.18"
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.1.8",
+    "es6-template-strings": "^2.0.1",
     "typescript": "2.4.2"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-code-push": {}
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "config": {
+    "ionic_webpack": "./config/webpack.config.js"
+  }
 }
