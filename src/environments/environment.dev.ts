@@ -7,12 +7,12 @@ export const ENV = {
     "id":"io.ionic.starter.dev",
     "version":"0.0.1",
     "ios":{
-      "CodePushServerUrl": "https://devhot.zijin.comxxxxxxx",
-      "CodePushDeploymentKey":"JEQaRrcCBLRHCYPSfKivFXJA86mh4ksvOXqoguatxxxxxxxxxx"
+      "CodePushServerUrl": "dev",
+      "CodePushDeploymentKey":"vl-wM0WyPuH2_n8b8P1TT1p-GzcH42f93449-3e76-4657-a3af-24284232a54e"
     },
     "android":{
-      "CodePushServerUrl": "https://devhot.zijin.comxxxxxxxxxx",
-      "CodePushDeploymentKey":"JEQaRrcCBLRHCYPSfKivFXJA86mh4ksvOXqogxxxxxxxxxxxxxx"
+      "CodePushServerUrl": "dev",
+      "CodePushDeploymentKey":"LFpPAKhfevJ9Hp1sIgWAHnNuAeod42f93449-3e76-4657-a3af-24284232a54e"
     }
   }
 }
