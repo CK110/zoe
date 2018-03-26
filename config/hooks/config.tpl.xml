@@ -83,12 +83,12 @@
     <platform name="ios">
         <preference name="CodePushDeploymentKey" value="${ios.CodePushDeploymentKey}" />
     </platform>
-    <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
-    <plugin name="cordova-plugin-device" spec="^2.0.1" />
-    <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
-    <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
-    <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
-    <plugin name="cordova-plugin-code-push" spec="^1.11.7" />
+    <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
+    <plugin name="cordova-plugin-device" spec="2.0.1" />
+    <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
+    <plugin name="cordova-plugin-ionic-webview" spec="1.1.16" />
+    <plugin name="cordova-plugin-ionic-keyboard" spec="2.0.5" />
+    <plugin name="cordova-plugin-code-push" spec="1.11.7" />
     <engine name="ios" spec="4.5.4" />
-    <engine name="android" spec="^7.1.0" />
+    <engine name="android" spec="7.1.0" />
 </widget>
