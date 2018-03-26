@@ -20,10 +20,6 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
     <hook src="config/hooks/before_prepare.js" type="before_prepare" />
-    <hook src="config/hooks/before_plugin_add.js" type="before_plugin_add" />
-    <hook src="config/hooks/after_plugin_add.js" type="after_plugin_add" />
-    <hook src="config/hooks/before_plugin_rm.js" type="before_plugin_rm" />
-    <hook src="config/hooks/after_plugin_rm.js" type="after_plugin_rm" />
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />

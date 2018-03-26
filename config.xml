@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter.dev" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>ionic-hello-world</name>
     <description>An awesome Ionic app(zoe).</description>
     <author email="chenkai4dev@163.com" href="http://iszoe.com/">CK</author>
@@ -20,10 +20,6 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
     <hook src="config/hooks/before_prepare.js" type="before_prepare" />
-    <hook src="config/hooks/before_plugin_add.js" type="before_plugin_add" />
-    <hook src="config/hooks/after_plugin_add.js" type="after_plugin_add" />
-    <hook src="config/hooks/before_plugin_rm.js" type="before_plugin_rm" />
-    <hook src="config/hooks/after_plugin_rm.js" type="after_plugin_rm" />
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
@@ -87,12 +83,12 @@
     <platform name="ios">
         <preference name="CodePushDeploymentKey" value="vl-wM0WyPuH2_n8b8P1TT1p-GzcH42f93449-3e76-4657-a3af-24284232a54e" />
     </platform>
-    <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
-    <plugin name="cordova-plugin-device" spec="^2.0.1" />
-    <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
-    <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
-    <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
-    <plugin name="cordova-plugin-code-push" spec="^1.11.7" />
+    <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
+    <plugin name="cordova-plugin-device" spec="2.0.1" />
+    <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
+    <plugin name="cordova-plugin-ionic-webview" spec="1.1.16" />
+    <plugin name="cordova-plugin-ionic-keyboard" spec="2.0.5" />
+    <plugin name="cordova-plugin-code-push" spec="1.11.7" />
     <engine name="ios" spec="4.5.4" />
-    <engine name="android" spec="^7.1.0" />
+    <engine name="android" spec="7.1.0" />
 </widget>
