@@ -4,7 +4,7 @@ export const ENV = {
   "server_url": "https://app.zijin.com",
   "file_server_url":"https://files.zijin.com",
   "cordova":{
-    "id":"io.ionic.starter.dev",
+    "id":"io.ionic.starter.uat",
     "version":"0.0.1",
     "ios":{
       "CodePushServerUrl": "uat",

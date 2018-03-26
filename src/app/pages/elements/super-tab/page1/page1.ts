@@ -9,9 +9,12 @@ import {ENV} from '@env/environment'
 })
 export class Page1Page {
 
+  mode:any;
+
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               public slimLoadingBarService: SlimLoadingBarService ) {
+    this.mode = ENV.mode;
 
     console.log(ENV.mode);
   }
