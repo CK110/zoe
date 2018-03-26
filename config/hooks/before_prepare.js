@@ -21,7 +21,7 @@ var destFileFull = path.join(ROOT_DIR, FILES.DEST);
 var configFileFull = path.join(ROOT_DIR, envFile);
 
 var templateData = fs.readFileSync(srcFileFull, 'utf8');
-var configData = fs.readFileSync(configFileFull, 'utf8').toString().split('=')[1];
+var configData = fs.readFileSync(configFileFull, 'utf8').toString().split('ENV =')[1];
 var config = JSON.parse(configData)['cordova'];
 
 var compiled = compile(templateData);
