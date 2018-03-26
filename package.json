@@ -1,5 +1,5 @@
 {
-  "name": "ionic-hello-world",
+  "name": "zoe",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "http://ionicframework.com/",
@@ -10,10 +10,9 @@
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
-    "add:ios": "ionic-app-scripts cordova platform add ios --no-resources",
-    "add:android": "ionic-app-scripts cordova platform add android --no-resources",
-    "build:uat": "NODE_ENV=uat",
-    "build:ios:prod": "NODE_ENV=prod "
+    "prepare:prod": "NODE_ENV=prod ionic cordova prepare --prod",
+    "build:ios:prod": "npm run prepare:prod && NODE_ENV=prod ionic cordova build ios --prod",
+    "build:android:prod": "npm run prepare:prod && NODE_ENV=prod ionic cordova build android --prod"
   },
   "dependencies": {
     "@angular/common": "5.0.3",

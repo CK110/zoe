@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>ionic-hello-world</name>
+    <name>zoe</name>
     <description>An awesome Ionic app(zoe).</description>
     <author email="chenkai4dev@163.com" href="http://iszoe.com/">CK</author>
     <content src="index.html" />
