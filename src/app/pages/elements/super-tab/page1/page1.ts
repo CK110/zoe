@@ -11,6 +11,10 @@ export class Page1Page {
 
   mode:any;
 
+  name:any='44';
+
+  array:any =[1,2,3]
+
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               public slimLoadingBarService: SlimLoadingBarService ) {
@@ -20,6 +24,8 @@ export class Page1Page {
   }
 
 
-
+  getname(){
+    return '222';
+  }
 
 }
