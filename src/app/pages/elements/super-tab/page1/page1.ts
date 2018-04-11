@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {NavController, NavParams} from 'ionic-angular';
 import {SlimLoadingBarService} from "ng2-slim-loading-bar";
 import {ENV} from '@env/environment'
+import {IosHelper} from "../../../../core/native/ios-helper";
 
 @Component({
   selector: 'page-page1',
@@ -17,9 +18,9 @@ export class Page1Page {
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
-              public slimLoadingBarService: SlimLoadingBarService ) {
+              public slimLoadingBarService: SlimLoadingBarService,
+              public iosHelper: IosHelper) {
     this.mode = ENV.mode;
-
     console.log(ENV.mode);
   }
 

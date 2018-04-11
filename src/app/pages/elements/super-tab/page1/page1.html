@@ -1,9 +1,6 @@
 <ion-content>
-  page1
-  <hr>
-  {{mode}}
-
-  <div *ngFor="let i of array">
-    <input name="{{i}}">
-  </div>
+  环境:{{mode}}
+  <br>
+  是否使用 WKWebWiew: {{iosHelper.isWKWebWiew()}}
+  是否使用 iphoneX:{{iosHelper.isIphoneX()}}
 </ion-content>

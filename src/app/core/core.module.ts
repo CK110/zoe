@@ -5,6 +5,8 @@ import {StatusBar} from "@ionic-native/status-bar";
 import {IonicErrorHandler} from "ionic-angular";
 import {SuperTabsModule} from "ionic2-super-tabs";
 import {SlimLoadingBarModule} from "ng2-slim-loading-bar";
+import {CodePushHelper} from "./native/code-push-helper";
+import {IosHelper} from "./native/ios-helper";
 
 
 @NgModule({
@@ -16,6 +18,10 @@ import {SlimLoadingBarModule} from "ng2-slim-loading-bar";
   providers: [
     StatusBar,
     SplashScreen,
+
+    CodePushHelper,
+    IosHelper,
+
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ],
 })
