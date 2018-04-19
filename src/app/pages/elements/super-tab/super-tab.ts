@@ -15,7 +15,6 @@ export class SuperTabPage {
   page2: any = Page2Page;
   page3: any = Page3Page;
 
-
   xxxx:any={
     m:'2'
   }
@@ -36,8 +35,12 @@ export class SuperTabPage {
 
     setInterval(()=>{
 
-      this.xxxx['m'] ={
-        x:i++
+      // this.xxxx['m'] ={
+      //   x:i++
+      // }
+
+      this.xxxx= {
+        m:'3333333'
       }
     },1000)
 

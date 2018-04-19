@@ -1,0 +1,15 @@
+page-demo-table {
+  td, th {
+    padding: 4px;
+    text-align:  center;
+  }
+
+  .scroll-table{
+    height: 160px;
+
+    .scroll-table-content{
+      width: 820px;
+      height: 160px;
+    }
+  }
+}

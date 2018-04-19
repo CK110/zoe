@@ -7,6 +7,11 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class Page3Page {
 
+  get M(){
+    console.log(this.navParams.data);
+    return this.navParams.data;
+  }
+
   constructor(public navCtrl: NavController, public navParams: NavParams) { }
 
 }
