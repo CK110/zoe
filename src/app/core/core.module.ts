@@ -8,7 +8,6 @@ import {SlimLoadingBarModule} from "ng2-slim-loading-bar";
 import {CodePushHelper} from "./native/code-push-helper";
 import {IosHelper} from "./native/ios-helper";
 
-
 @NgModule({
   imports: [
     CommonModule,
@@ -21,7 +20,6 @@ import {IosHelper} from "./native/ios-helper";
 
     CodePushHelper,
     IosHelper,
-
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ],
 })

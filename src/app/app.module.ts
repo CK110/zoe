@@ -8,6 +8,8 @@ import { HomePage } from './pages/tabs/home/home';
 import { TabsPage } from './pages/tabs/tabs';
 import {CoreModule} from "./core/core.module";
 import {ElementsModule} from "./pages/elements/elements.module";
+import {CordovaModule} from "./pages/cordova/cordova.module";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import {ElementsModule} from "./pages/elements/elements.module";
       backButtonText: '',             //返回按钮只显示图标
     }),
     CoreModule,
-    ElementsModule
+    HttpClientModule,
+    ElementsModule,
+    CordovaModule
   ],
   declarations: [
     MyApp,

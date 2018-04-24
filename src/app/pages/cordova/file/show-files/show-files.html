@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      远程文件展示页面
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let file of files">
+      <ion-label>
+        {{file.filename}}
+      </ion-label>
+      <ion-icon name="cloud-download" item-end *ngIf="!file.downloaded" (click)="downloadFile(file)"></ion-icon>
+      <ion-icon name="eye" item-end *ngIf="file.downloaded" (click)="viewFile(file)"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

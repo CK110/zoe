@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      文件操作
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+
+  <button ion-button full (click)="listDirectory()" >文件夹</button>
+
+  <button ion-button full (click)="fileTransferDownLoad()" >fileTransferDownLoad</button>
+
+  <button ion-button full (click)="toListFilesPage()" >远程文件展示页面</button>
+
+  <button ion-button full (click)="toListLocalFilesPage()" >选择本地文件</button>
+
+  <button ion-button full (click)="fileExist2()" >文件是否存在</button>
+
+  <!--<ion-icon name="cloud-download" item-end *ngIf="!(fileExist(file) | async)"></ion-icon>-->
+  <!--<ion-icon name="eye" item-end *ngIf="fileExist(file) | async as result"></ion-icon>-->
+  <!--<ion-icon *ngIf="!fileExist3(file.filename)"  name="cloud-download" item-end (click)="downloadFile(file)"></ion-icon>-->
+  <!--<ion-icon *ngIf="fileExist3(file.filename)" name="eye" item-end (click)="viewFile(file)"></ion-icon>-->
+
+</ion-content>

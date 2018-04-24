@@ -1,0 +1,20 @@
+export const REMOTEFILES = [
+  {
+    filename:'物品发放明细导入模板2.xls',
+    filecatalog:'erp/process/apvsalecont',
+    contenttype:'application/vnd.ms-excel',
+    filesize:'16896',
+  },
+  {
+    filename:'维护周报.doc',
+    filecatalog:'erp/regWeekly',
+    contenttype:'application/msword',
+    filesize:'82984',
+  },
+  {
+    filename:'file.docx',
+    filecatalog:'erp/regWeekly',
+    contenttype:'application/msword',
+    filesize:'82984',
+  }
+]

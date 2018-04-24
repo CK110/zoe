@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {SuperTabPage} from "../../elements/super-tab/super-tab";
 import {TablePage} from "../../elements/table/table";
+import {FilePage} from "../../cordova/file/file";
 
 @Component({
   selector: 'page-home',
@@ -19,9 +20,12 @@ export class HomePage {
   toPage(name:string){
     if(name === 'super-tab'){
       this.navCtrl.push(SuperTabPage);
-    };
+    }
     if(name === 'table'){
       this.navCtrl.push(TablePage);
+    }
+    if(name === 'file'){
+      this.navCtrl.push(FilePage);
     }
   }
 
