@@ -3,6 +3,7 @@ import {NavController, NavParams} from 'ionic-angular';
 import {SlimLoadingBarService} from "ng2-slim-loading-bar";
 import {ENV} from '@env/environment'
 import {IosHelper} from "../../../../core/native/ios-helper";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'page-page1',

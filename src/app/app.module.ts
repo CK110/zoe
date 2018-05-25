@@ -19,6 +19,7 @@ import {HttpClientModule} from "@angular/common/http";
       tabsHideOnSubPages: true,       // 隐藏非rootPage的tab标签
       mode: 'ios',                    // 样式统一ios
       backButtonText: '',             //返回按钮只显示图标
+      swipeBackEnabled: true
     }),
     CoreModule,
     HttpClientModule,

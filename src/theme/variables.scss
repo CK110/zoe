@@ -86,3 +86,20 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+
+ion-loading.http-loading {
+
+  top: 44px!important;
+
+  .loading-wrapper{
+    margin-bottom: 44px!important;
+    background: #403e3e!important;
+    color: #fff!important;
+  }
+
+  ion-spinner * {
+    stroke: #fff!important;
+    fill: #fff!important;
+  }
+}

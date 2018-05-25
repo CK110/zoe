@@ -11,41 +11,29 @@ console.log('NODE_ENV:'+ env);
 console.log('IONIC_ENV:'+IONIC_ENV);
 
 if(env === 'dev'){
-  if(IONIC_ENV == 'dev'){
-    useDefaultConfig.dev.resolve.alias = {
-      "@env/environment": path.resolve(environmentPath('dev'))
-    };
+  useDefaultConfig.dev.resolve.alias = {
+    "@env/environment": path.resolve(environmentPath('dev'))
   };
-  if(IONIC_ENV == 'prod'){
-    useDefaultConfig.prod.resolve.alias = {
-      "@env/environment": path.resolve(environmentPath('dev'))
-    };
+  useDefaultConfig.prod.resolve.alias = {
+    "@env/environment": path.resolve(environmentPath('dev'))
   };
 }
 
 if(env === 'uat'){
-  if(IONIC_ENV == 'dev'){
-    useDefaultConfig.dev.resolve.alias = {
-      "@env/environment": path.resolve(environmentPath('uat'))
-    };
+  useDefaultConfig.dev.resolve.alias = {
+    "@env/environment": path.resolve(environmentPath('uat'))
   };
-  if(IONIC_ENV == 'prod'){
-    useDefaultConfig.prod.resolve.alias = {
-      "@env/environment": path.resolve(environmentPath('uat'))
-    };
+  useDefaultConfig.prod.resolve.alias = {
+    "@env/environment": path.resolve(environmentPath('uat'))
   };
 }
 
 if(env === 'prod'){
-  if(IONIC_ENV == 'dev'){
-    useDefaultConfig.dev.resolve.alias = {
-      "@env/environment": path.resolve(environmentPath('prod'))
-    };
+  useDefaultConfig.dev.resolve.alias = {
+    "@env/environment": path.resolve(environmentPath('prod'))
   };
-  if(IONIC_ENV == 'prod'){
-    useDefaultConfig.prod.resolve.alias = {
-      "@env/environment": path.resolve(environmentPath('prod'))
-    };
+  useDefaultConfig.prod.resolve.alias = {
+    "@env/environment": path.resolve(environmentPath('prod'))
   };
 }
 

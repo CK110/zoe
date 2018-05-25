@@ -5,14 +5,17 @@ import {Page1Page} from "./super-tab/page1/page1";
 import {Page3Page} from "./super-tab/page3/page3";
 import {SharedModule} from "../../shared/shared.module";
 import {TablePage} from "./table/table";
+import {LoadingPage} from "./loading/loading";
 
 export const SUPER_TAB_PAGES = [
   SuperTabPage,
   Page1Page,
   Page2Page,
   Page3Page,
-  TablePage
-]
+  TablePage,
+
+  LoadingPage
+];
 
 
 
