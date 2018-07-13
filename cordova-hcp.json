@@ -1,0 +1,8 @@
+{
+  "name": "ionic-hello-world",
+  "ios_identifier": "www.baidu.com",
+  "android_identifier": "www.baidu.com",
+  "content_url": "http://10.2.215.132:8099/www/",
+  "update": "resume",
+  "min_native_interface":"0.0.1"
+}

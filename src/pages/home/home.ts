@@ -14,6 +14,7 @@ export class HomePage {
   }
 
   checkVersion(){
+    console.log(`checkVersion`);
     this.hotCodePushService.checkVersion();
   }
 

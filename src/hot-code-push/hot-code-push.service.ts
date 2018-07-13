@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {HotCodePush} from "@ionic-native/hot-code-push";
+import {HotCodePush, HotCodePushVersion} from "@ionic-native/hot-code-push";
 
 @Injectable()
 export class HotCodePushService {
@@ -13,7 +13,12 @@ export class HotCodePushService {
    */
   checkVersion(){
     this.hotCodePush.isUpdateAvailableForInstallation().then((HotCodePushUpdate)=>{
+      console.log('isUpdateAvailableForInstallation');
       console.log(HotCodePushUpdate);
+    });
+
+    this.hotCodePush.getVersionInfo().then((HotCodePushVersion)=>{
+      console.log(HotCodePushVersion);
     })
   }
 }
