@@ -10,6 +10,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {HotCodePushModule} from "../hot-code-push/hot-code-push.module";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HotCodePushModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
